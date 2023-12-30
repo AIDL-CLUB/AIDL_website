@@ -5,6 +5,7 @@ import ParticlesjsBackground from "./components/ParticlesjsBackground";
 import CoreComm from "./components/CoreComm";
 import CoreComm23 from "./components/CoreComm23";
 
+
 import Preloader from "./components/Pre";
 import {
   BrowserRouter ,
@@ -34,9 +35,11 @@ function App() {
       
       <Routes>
       <Route index ='/' element={<Home/>} />
-      <Route path="/CORECOMMITTEE" element={<CoreComm />} />
-      <Route path="/CORECOMMITTEE23" element={<CoreComm23 />} />
+      <Route path="2022-23" element={<CoreComm />} />
+      <Route path="2023-24" element={<CoreComm23 />} />
       </Routes> 
+    
+     
     </div>
   </BrowserRouter>
   );

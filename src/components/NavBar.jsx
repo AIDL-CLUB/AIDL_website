@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { HashLink } from 'react-router-hash-link';
 
+
+
 const NavBar = () => {
   const [nav, setNav] = useState(false);
   const [showEventsDropdown, setShowEventsDropdown] = useState(false);
@@ -42,14 +44,14 @@ const NavBar = () => {
                 <span>{link}</span>
                 {id === 3 && showEventsDropdown && (
                   <ul className="absolute top-full left-0 bg-black text-white p-2">
-                    {subLinks.map((subLink, index) => (
+                    {subLinks.map((subLinks, index) => (
                       <li key={index} className="py-2">
                         <HashLink
-                          onClick={() => setNav(!nav)}
-                          to={`#${subLink}`}
+                          onClick={() => setNav(nav)}
+                          to={`#${subLinks}`}
                           smooth
                         >
-                          {subLink}
+                          {subLinks}
                         </HashLink>
                       </li>
                     ))}
@@ -57,14 +59,15 @@ const NavBar = () => {
                 )}
                 {id === 5 && showCoreCommitteeDropdown && (
                   <ul className="absolute top-full left-0 bg-black text-white p-2">
-                    {subLinks.map((subLink, index) => (
+                    {subLinks.map((subLinks, index) => (
                       <li key={index} className="py-2">
                         <HashLink
-                          onClick={() => setNav(!nav)}
-                          to={`#${subLink === "2022-23" ? "CoreComm" : "CoreComm23"}`} 
-                          smooth
+                          onClick={() => 
+                          setNav(nav)}
+                          to={`/${subLinks}`} 
+                       
                         >
-                          {subLink}
+                          {subLinks}
                         </HashLink>
                       </li>
                     ))}
@@ -72,7 +75,7 @@ const NavBar = () => {
                 )}
               </div>
             ) : (
-              <HashLink to={`#${link}`} smooth>
+              <HashLink to={`/#${link}`} smooth>
                 {link}
               </HashLink>
             )}
@@ -93,14 +96,14 @@ const NavBar = () => {
                 <div>
                   <span>{link}</span>
                   <ul className="mt-2">
-                    {subLinks.map((subLink, index) => (
+                    {subLinks.map((subLinks, index) => (
                       <li key={index}>
                         <HashLink
                           onClick={() => setNav(!nav)}
-                          to={`#${subLink}`}
+                          to={`#${subLinks}`}
                           smooth
                         >
-                          {subLink}
+                          {subLinks}
                         </HashLink>
                       </li>
                     ))}
