@@ -3,6 +3,7 @@ import NavBar from "./components/NavBar";
 import Home from "./components/Home";
 import ParticlesjsBackground from "./components/ParticlesjsBackground";
 import CoreComm from "./components/CoreComm";
+import CoreComm23 from "./components/CoreComm23";
 
 import Preloader from "./components/Pre";
 import {
@@ -33,8 +34,8 @@ function App() {
       
       <Routes>
       <Route index ='/' element={<Home/>} />
-      <Route path="/CORE COMMITEE" element={<CoreComm />} />
-
+      <Route path="/CORECOMMITTEE" element={<CoreComm />} />
+      <Route path="/CORECOMMITTEE23" element={<CoreComm23 />} />
       </Routes> 
     </div>
   </BrowserRouter>

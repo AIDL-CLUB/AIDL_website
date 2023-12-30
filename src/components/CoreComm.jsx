@@ -16,14 +16,14 @@ import Footer from "./Footer";
 function CoreComm() {
 return(
    <>
-    <Container fluid className="corecomm-section" id="CORE COMMITEE">
+    <Container fluid className="corecomm-section" id="CORECOMMITTEE">
     <div className="mt-0 justify-items-center gap-1 justify-items-center pt-10 text-gray-400 text-sm pb-8 sm:ml-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 text-center pt-2 font-normal text-white text-sm pb-4">
     <p className="text-4xl font-bold inline border-b-4 border-gray-500 text-white pt-10 mt-10  ">
           Lets Meet the Core Commitee 2022-2023
         </p></div>
         <br />
       
-    <div name="CoreComm" id="CORE COMMITEE" className="flex min-h-screen items-center justify-center ">
+    <div name="CoreComm" id="CORE COMMITTEE" className="flex min-h-screen items-center justify-center ">
     <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
       <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
         <div className="h-96 w-72">

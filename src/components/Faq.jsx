@@ -16,19 +16,14 @@ function Faq() {
   return (
     <Container fluid className="faq-section">
 
-    <div
-    name="faq" id="FAQ"
-    className="my-20 mt-10 inline-block bg-gradient-from-b to-gray-800 to-black w-full h-screen pt-20 "
-  >
-    <div className="max-w-screen-lg mb-10 inline-block mx-auto p-2 flex flex-col justify-center w-full h-full text-white pt-20 ">
-      <div>
-
-        <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline ">
-        Some FAQs
-
-        </p>
+<div name="faq" id="FAQ" className="my-20 mt-10 inline-block bg-gradient-from-b to-gray-800 to-black w-full h-screen pt-20">
+  <div className="max-w-screen-lg mb-10 inline-block mx-auto p-2 flex flex-col justify-center w-full h-full text-white pt-20">
+    <div>
       
-      <div className="bg-gradient-to-b from-gray-800 to-black w-full min-h-screen flex justify-center items-center text-white">
+      <div className="bg-gradient-to-b from-gray-800 to-black w-full min-h-screen text-white  ">
+      <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
+        Some FAQs
+      </p>
         <div className="w-3/4 h-auto my-4 mx-auto p-4 bg-gradient-to-black from-gray-100 to-black rounded-lg">
           {data.map((item, i) => (
             <div key={i} className="flex flex-col items-center my-3 px-4">

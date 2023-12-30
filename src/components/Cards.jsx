@@ -4,17 +4,18 @@ import AS from '../components/images/AS.png';
 import MS from '../components/images/MS.png';
 import SMK from '../components/images/SMK.png';
 import PC from '../components/images/PC.png';
-
+import SV from '../components/images/SV.jpg';
 
 
 const Cards = () => {
   const techs = [
     {
       id: 1,
-      src: MS,
-      title: "Dr. Milind Shah",
+      src: SV,
+      title: "Dr. Shubhangi Vaikole",
       style: "shadow-blue-600",
-      posi:"Head of the Club",
+      posi: "Convener of the Club",
+
     },
     {
       id: 2,
@@ -24,9 +25,17 @@ const Cards = () => {
       posi:"Principal",
 
     },
-   
+
     {
       id: 3,
+      src: MS,
+      title: "Dr. Milind Shah",
+      style: "shadow-blue-600",
+      posi:"Dean of Academics",
+    },
+   
+    {
+      id: 4,
       src: PC,
       title: "Dr. Pranali Choudhari",
       style: "shadow-blue-600",
@@ -35,7 +44,7 @@ const Cards = () => {
     },
  
     {
-      id: 4,
+      id: 5,
       src: AS,
       title: "Mr. Amroz Siddiqui",
       style: "shadow-blue-600",

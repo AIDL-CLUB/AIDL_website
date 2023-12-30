@@ -1,5 +1,5 @@
 import React from "react";
-import AIDLLOGO from "../assets/AIDLLOGO.jpeg";
+import AIDLLOGO from "../assets/AIDLLOGO.png";
 // import {MdOutlineKeyboardArrowRight} from 'react-icons/md'
 // import { Link } from "react-scroll";
 import About from "./About";
