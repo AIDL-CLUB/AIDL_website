@@ -4,7 +4,7 @@ import AS from '../components/images/AS.png';
 import MS from '../components/images/MS.png';
 import SMK from '../components/images/SMK.png';
 import PC from '../components/images/PC.png';
-import SV from '../components/images/SV.jpg';
+import SV from '../components/images/SV.png';
 
 
 const Cards = () => {
