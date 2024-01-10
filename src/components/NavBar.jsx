@@ -16,15 +16,19 @@ const NavBar = () => {
       id: 3,
       link: "EVENTS",
     },
-     { id: 7, link: "EXPERIMENTS" },
-    {
-      id: 4,
-      link: "FAQ",
+     { 
+      id: 7, 
+      link: "EXPERIMENTS" 
     },
+   
     {
       id: 5,
       link: "CORE COMMITEE",
       
+    },
+    {
+      id: 4,
+      link: "FAQ",
     },
     {
       id: 6,
@@ -42,7 +46,7 @@ const NavBar = () => {
             key={id}
             className="px-4 cursor-pointer uppercase font-medium text-gray-500 hover:scale-105 duration-200"
           >
-            <HashLink to={id!==5?`/#${link}`:`/${link}`} smooth>
+            <HashLink to={id !== 7 && id !== 5 ?`/#${link}`:`/${link}`} smooth>
               {link}
             </HashLink>
           </li>
@@ -63,7 +67,7 @@ const NavBar = () => {
             >
               <HashLink
                 onClick={() => setNav(!nav)}
-                to={id!==5?`/#${link}`:`/${link}`} smooth>
+                to={id !== 7 && id !== 5 ?`/#${link}`:`/${link}`} smooth>
                 {link}
             </HashLink>
               </li>

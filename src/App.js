@@ -34,7 +34,7 @@ function App() {
         <Routes>
           <Route index="/" element={<Home />} />
           <Route path="/CORE COMMITEE" element={<CoreComm />} />
-          <Route path="/EXPERIMENTS" component={<Expt />} />
+          <Route path="/EXPERIMENTS" element={<Expt />} /> 
         </Routes>
       </div>
     </BrowserRouter>
